@@ -1,0 +1,238 @@
+
+html,
+body {
+    margin: 0;
+}
+
+body {
+    background-color: #424949;    
+}
+
+h1 {
+    color: #EAEDED;
+    font-size: 1.5rem;
+    margin-right: auto;
+}
+
+.divSuperiorEncabezado {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0;
+}
+
+.encabezado {
+    background-color: #515A5A;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 10px;
+}
+
+nav {
+    margin-left: auto; /* Mueve el nav a la derecha */
+    padding-right: 25px;
+    gap: 4px;
+}
+
+.ancho-total {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+}
+
+/* Estilos para el contenido */
+.contenido {
+    background-color: #EAEDED;
+    width: 54%; /* Cambiar el ancho a un valor porcentual diferente */
+    /*max-width: none;  Eliminar cualquier límite de ancho máximo */
+    height: 90vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;  
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+
+.divDentroContenido {
+    margin: 5px;
+}
+
+output {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px;
+}
+
+.outputStyle {
+    min-height: 30px;
+    font-weight: bold;
+    color: #515A5A;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* offsetX, offsetY, blurRadius, color */
+    
+}
+
+.botonNumeroGenerado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centrado horizontal */
+}
+
+.botonNumeroGenerado>* {
+    margin-bottom: 10px;
+    /* Espacio entre elementos */
+}
+
+.botonNumeroGenerado fieldset {
+    border: none;
+    /* Elimina el borde del fieldset */
+}
+
+.botonNumeroGenerado button {
+    margin: 1px;
+    /* Añade un pequeño margen entre los botones */
+    padding: 4px;
+}
+
+.boton-grande {
+    font-size: 20px;
+    height: 60px;
+    background-color: #ABEBC6 ;
+    color: rgb(0, 0, 0);
+    margin-bottom: 14px;
+}
+
+.boton-grande:hover {
+    background-color: #2de77b8c ;
+    /* Cambio de color al pasar el ratón */
+}
+
+button {
+    background-color: #E5E7E9;
+}
+
+button:hover {
+    background-color: #BDC3C7;
+    border-color: #E5E7E9;
+}
+
+legend {
+    font-size: 0.75em;
+    font-style: italic;
+    margin-top: 40em;
+}
+
+/*! Formulario Escondido Premio */
+.divFormPremio {
+    /* display: none; */
+    margin-top: 20px;
+    align-items: center;
+}
+/*! legend fieldset Escondida */
+.divEncimaForm {
+    /* display: none; */
+}
+
+.divPremios {
+    display: flex; /* Convertir en flex container */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    gap: 20px; /* Espacio entre los elementos */
+    margin: 20px 0;
+    background-color: #E5E7E9;
+    border: 1px solid #666;
+    box-shadow: 2px 2px 5px #888;
+    
+    margin-top: 25px;
+    /* margin: 10px; */
+    padding: 4px;
+}
+
+input:hover {
+    border-color: #ccc;
+    /* Cambia el color del borde al hacer hover */
+}
+
+.divFormPremio,
+/* .divPremios, */
+.divComprobar {
+    background-color: #E5E7E9;
+    border: 1px solid #666;
+    box-shadow: 2px 2px 5px #888;
+    margin-bottom: 5px;
+    margin: 10px;
+    padding: 4px;
+    
+}
+
+fieldset {
+    box-shadow: 2px 2px 5px #888;
+    margin: 2%;
+}
+
+/* Añadir animación al mensaje de éxito */
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.mesajeEnPantallaTrue {
+    width: 100%;
+    font-size: 24px;
+    background-color: #2ECC71;
+    display: none;
+    text-align: center;
+    justify-content: center;
+    animation: slideDown 0.7s ease;
+}
+
+.mesajeEnPantallaFalse {
+    width: 100%;
+    font-size: 24px;
+    background-color: #E74C3C;
+    display: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    animation: slideDown 0.7s ease;
+}
+
+.mesajeEnPantallaPremio {
+    width: 100%;
+    font-size: 64px;
+    background-color: #2ECC71;
+    display: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    animation: slideDown 3s ease;
+}
+
+footer {
+    background-color: #515A5A;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1px;
+}
+
+span {
+    color: #ABEBC6;
+}

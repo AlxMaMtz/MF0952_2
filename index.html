@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-ES">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Página web de Lotto</title>
+</head>
+<body>
+    <div class="divSuperiorEncabezado">
+        <div class="encabezado">
+            <h1>Lotto<span>.io</span></h1>            
+            <nav class="ancho-total">
+                <button class="boton-derecha">Login</button>
+                <button class="boton-derecha">Registro</button>
+            </nav>            
+        </div>
+        
+        
+    </div>
+    
+    <div class="contenido">
+        <div class="divDentroContenido">
+            <fieldset class="divEncimaForm">
+                <legend>Formulario de contacto</legend>                
+                <form>
+                    <div class="divFormPremio">
+                    <label for="nombreCompleto">Nombre:</label><br>
+                    <input type="text" id="nombreCompleto" name="nombreCompleto" required placeholder="Introduce tu nombre"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required placeholder="Correo electrónico"><br>
+                    <label for="telefono">Teléfono:</label><br>
+                    <input type="tel" id="telefono" name="telefono" required placeholder="Número de teléfono">
+                    <button class="boton" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </fieldset>
+        
+            <fieldset id="premios">
+                <legend>Elige tu premio</legend>
+                <div class="divPremios">
+                    <div class="premio1">
+                        <output class="outputStyle"></output>
+                        <button class="boton boton-grande">Premio 1</button>
+                    </div>
+                    <div class="premio2">
+                        <output class="outputStyle"></output>
+                        <button class="boton boton-grande">Premio 2</button>
+                    </div>
+                    <div class="premio3">
+                        <output class="outputStyle"></output>
+                        <button class="boton boton-grande">Premio 3</button>
+                    </div>
+                </div>
+            </fieldset>
+        
+            <fieldset>
+                <legend id="comprobarNumero">Comprueba tu número</legend>
+                <div class="divComprobar">
+                    <input type="text" id="numero" placeholder="5 números + letra">
+                    <button onclick="comprobarNumero()">Comprobar</button>
+                </div>
+            </fieldset>
+
+            <div class="mesajes">
+                <div class="mesajeEnPantallaTrue">
+                    <p>Número copiado al portapapeles.</p>
+                </div>
+        
+                <div class="mesajeEnPantallaFalse">
+                    <p>Número no premiado, o error al introducir los datos...</p>
+                </div>
+        
+                <div class="mesajeEnPantallaPremio">
+                    <p>¡¡Enhorabuena, te ha tocado el !!</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+
+    <footer class="ancho-total">
+        <p>Lotto<span>.io&nbsp;</span><span>G</span>doce</p>        
+        <small>Todos los derechos reservados.</small>
+    </footer>
+</body>
+</html>
